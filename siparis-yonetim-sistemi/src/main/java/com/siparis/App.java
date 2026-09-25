@@ -43,7 +43,10 @@ public class App {
         } else {
             System.out.println("Banka karti taksit desteklemiyor - kod bunu zaten biliyor, hata firlatmadan atliyor.");
         }
-
+        // YENİ: indirim hesaplama denemesi (feature/indirim-hesaplama)
+           double indirimli = hesaplayici.indirimliTutar(siparis, 10);
+           System.out.println("Yuzde 10 indirimli tutar: " + indirimli);
+           
         // YENİ EKLENEN KISIM: konsol demosu bittikten sonra web sunucusunu baslat
         SpringApplication.run(App.class, args);
     }

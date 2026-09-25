@@ -12,4 +12,10 @@ public class SiparisHesaplayici {
         }
         return toplam;
     }
+
+        // YENİ: feature/indirim-hesaplama dalinda eklendi
+    public double indirimliTutar(Siparis siparis, double indirimOrani) {
+        double toplam = toplamTutar(siparis);
+        return toplam - (toplam * indirimOrani / 100);
+    }
 }
