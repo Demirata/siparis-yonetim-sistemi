@@ -16,13 +16,17 @@ public class Siparis {
         urunler.add(urun);
     }
 
-    public double toplamTutar() {
-        double toplam = 0;
-        for (Urun urun : urunler) {
-            toplam += urun.getFiyat();
-        }
-        return toplam;
-    }
+    // --- ESKİ HALİ (SRP öncesi): hesaplama burada, Siparis'in içindeydi ---
+    // public double toplamTutar() {
+    //     double toplam = 0;
+    //     for (Urun urun : urunler) {
+    //         toplam += urun.getFiyat();
+    //     }
+    //     return toplam;
+    // }
+    // --- YENİ HALİ: bu mantık artık ayrı bir sınıfta ---
+    // Bkz: com.siparis.service.SiparisHesaplayici.toplamTutar(Siparis)
+    // Neden taşındı: SRP (Tek Sorumluluk) - Siparis artık sadece veri tutuyor, hesaplama yapmıyor.
 
     public Musteri getMusteri() {
         return musteri;
