@@ -1,5 +1,8 @@
 package com.siparis;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 import com.siparis.model.Musteri;
 import com.siparis.model.Urun;
 import com.siparis.model.Siparis;
@@ -10,6 +13,7 @@ import com.siparis.service.KrediKartiOdeme;
 import com.siparis.service.BankaKartiOdeme;
 import com.siparis.service.TaksitliOdemeYapilabilir;
 
+@SpringBootApplication
 public class App {
     public static void main(String[] args) {
         Musteri musteri = new Musteri("Ahmet Yilmaz", "ahmet@example.com");
@@ -29,7 +33,6 @@ public class App {
         odemeServisi.odemeIsle(krediKarti, toplam);
         odemeServisi.odemeIsle(bankaKarti, toplam);
 
-        // Taksit ozelligi: sadece destekleyenler icin guvenle calisir
         if (krediKarti instanceof TaksitliOdemeYapilabilir) {
             TaksitliOdemeYapilabilir taksitli = (TaksitliOdemeYapilabilir) krediKarti;
             taksitli.taksitYap(3, toplam);
@@ -40,5 +43,8 @@ public class App {
         } else {
             System.out.println("Banka karti taksit desteklemiyor - kod bunu zaten biliyor, hata firlatmadan atliyor.");
         }
+
+        // YENİ EKLENEN KISIM: konsol demosu bittikten sonra web sunucusunu baslat
+        SpringApplication.run(App.class, args);
     }
 }
