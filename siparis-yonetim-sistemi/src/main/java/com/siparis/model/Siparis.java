@@ -6,6 +6,7 @@ import java.util.List;
 public class Siparis {
     private Musteri musteri;
     private List<Urun> urunler;
+    private Long id; // YENİ: depoda saklarken siparişi tekil olarak tanimlamak icin
 
     public Siparis(Musteri musteri) {
         this.musteri = musteri;
@@ -34,5 +35,13 @@ public class Siparis {
 
     public List<Urun> getUrunler() {
         return urunler;
+    }
+    // YENİ: id disaridan (repository tarafindan) atanacagi icin hem okuma hem yazma metodu var
+    public Long getId() {
+    return id;
+    }
+
+    public void setId(Long id) {
+    this.id = id;
     }
 }
