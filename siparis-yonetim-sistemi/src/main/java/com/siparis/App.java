@@ -47,9 +47,18 @@ public class App {
            double indirimli = hesaplayici.indirimliTutar(siparis, 10);
            System.out.println("Yuzde 10 indirimli tutar: " + indirimli);
 
+<<<<<<< HEAD
            // "Takim arkadasi" degisikligi - dev'de dogrudan yapildi (sadece bu ornek icin)
            double kdvDahilToplam = toplam * 1.20;
            System.out.println("KDV dahil toplam: " + kdvDahilToplam);
+=======
+           // "Baska bir gelistirme" - feature branch'te yapildi
+           System.out.println("Kargo ucreti dahil toplam: " + (toplam + 25));
+           
+            // "Baska bir gelistirme" - feature branch'te yapildi
+           System.out.println("Kargo ucreti dahil toplam: " + (toplam + 25));
+
+>>>>>>> feature/indirim-hesaplama
 
            
         // YENİ EKLENEN KISIM: konsol demosu bittikten sonra web sunucusunu baslat
