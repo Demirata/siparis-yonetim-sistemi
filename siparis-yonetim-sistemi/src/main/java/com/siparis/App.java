@@ -46,6 +46,14 @@ public class App {
         // YENİ: indirim hesaplama denemesi (feature/indirim-hesaplama)
            double indirimli = hesaplayici.indirimliTutar(siparis, 10);
            System.out.println("Yuzde 10 indirimli tutar: " + indirimli);
+
+           // "Baska bir gelistirme" - feature branch'te yapildi
+           System.out.println("Kargo ucreti dahil toplam: " + (toplam + 25));
+           
+            // "Baska bir gelistirme" - feature branch'te yapildi
+           System.out.println("Kargo ucreti dahil toplam: " + (toplam + 25));
+
+
            
         // YENİ EKLENEN KISIM: konsol demosu bittikten sonra web sunucusunu baslat
         SpringApplication.run(App.class, args);
