@@ -46,6 +46,11 @@ public class App {
         // YENİ: indirim hesaplama denemesi (feature/indirim-hesaplama)
            double indirimli = hesaplayici.indirimliTutar(siparis, 10);
            System.out.println("Yuzde 10 indirimli tutar: " + indirimli);
+
+           // "Takim arkadasi" degisikligi - dev'de dogrudan yapildi (sadece bu ornek icin)
+           double kdvDahilToplam = toplam * 1.20;
+           System.out.println("KDV dahil toplam: " + kdvDahilToplam);
+
            
         // YENİ EKLENEN KISIM: konsol demosu bittikten sonra web sunucusunu baslat
         SpringApplication.run(App.class, args);
