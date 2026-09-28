@@ -16,7 +16,7 @@ import com.siparis.service.TaksitliOdemeYapilabilir;
 @SpringBootApplication
 public class App {
     public static void main(String[] args) {
-        Musteri musteri = new Musteri("Ahmet Yilmaz", "ahmet@example.com");
+        Musteri musteri = new Musteri("Tevfik Can Demirata", "tevfikcan.dmrt@example.com");
         Siparis siparis = new Siparis(musteri);
 
         siparis.urunEkle(new Urun("Klavye", 450.0));
@@ -39,12 +39,12 @@ public class App {
         }
 
         if (bankaKarti instanceof TaksitliOdemeYapilabilir) {
-            System.out.println("Banka karti taksit destekliyor (buraya hic girmeyecek).");
+            System.out.println("Banka karti taksit destekliyor.");
         } else {
-            System.out.println("Banka karti taksit desteklemiyor - kod bunu zaten biliyor, hata firlatmadan atliyor.");
+            System.out.println("Banka karti taksit desteklemiyor.");
         }
-        // YENİ: indirim hesaplama denemesi (feature/indirim-hesaplama)
         
+        // YENİ: indirim hesaplama denemesi (feature/indirim-hesaplama)
         double indirimli = hesaplayici.indirimliTutar(siparis, 10);
         System.out.println("Yuzde 10 indirimli tutar: " + indirimli);
  
