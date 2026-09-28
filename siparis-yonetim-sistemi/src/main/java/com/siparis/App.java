@@ -45,7 +45,7 @@ public class App {
         }
         // YENİ: indirim hesaplama denemesi (feature/indirim-hesaplama)
            double indirimli = hesaplayici.indirimliTutar(siparis, 10);
-           System.out.println("Yuzde 10 indirimli tutar: " + indirimli);
+           System.out.println("Yuzde 10 indirimli tutar (feature): " + indirimli);
 
            // "Baska bir gelistirme" - feature branch'te yapildi
            System.out.println("Kargo ucreti dahil toplam: " + (toplam + 25));
