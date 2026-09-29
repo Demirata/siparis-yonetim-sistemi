@@ -51,7 +51,7 @@ public class App {
            System.out.println("Kargo ucreti dahil toplam: " + (toplam + 25));
            
             // "Baska bir gelistirme" - feature branch'te yapildi
-           System.out.println("Kargo ucreti dahil toplam: " + (toplam + 25));
+           System.out.println("Kargo ucreti dahil toplam: (conflict denemesi feature) " + (toplam + 25));
 
 
            
