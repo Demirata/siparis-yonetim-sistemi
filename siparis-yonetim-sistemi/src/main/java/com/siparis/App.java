@@ -52,16 +52,8 @@ public class App {
         double kdvDahilToplam = toplam * 1.20;
         System.out.println("KDV dahil toplam: (conflict denemesi) " + kdvDahilToplam);
 
-<<<<<<< HEAD
         // "Baska bir gelistirme" - feature branch'te yapildi
         System.out.println("Kargo ucreti dahil toplam: " + (toplam + 25));
-=======
-           // "Baska bir gelistirme" - feature branch'te yapildi
-           System.out.println("Kargo ucreti dahil toplam: " + (toplam + 25));
-           
-            // "Baska bir gelistirme" - feature branch'te yapildi
-           System.out.println("Kargo ucreti dahil toplam: (conflict denemesi feature) " + (toplam + 25));
->>>>>>> feature/indirim-hesaplama
 
         // YENİ EKLENEN KISIM: konsol demosu bittikten sonra web sunucusunu baslat  
         SpringApplication.run(App.class, args);
