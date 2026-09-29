@@ -50,7 +50,7 @@ public class App {
  
         // "Takim arkadasi" degisikligi - dev'de dogrudan yapildi (sadece bu ornek icin)
         double kdvDahilToplam = toplam * 1.20;
-        System.out.println("KDV dahil toplam: " + kdvDahilToplam);
+        System.out.println("KDV dahil toplam: (conflict denemesi) " + kdvDahilToplam);
 
         // "Baska bir gelistirme" - feature branch'te yapildi
         System.out.println("Kargo ucreti dahil toplam: " + (toplam + 25));
