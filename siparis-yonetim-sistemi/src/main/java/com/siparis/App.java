@@ -55,7 +55,7 @@ public class App {
         // "Baska bir gelistirme" - feature branch'te yapildi
         System.out.println("Kargo ucreti dahil toplam: " + (toplam + 25));
 
-        System.out.println("pull request denemesi");
+        System.out.println("deneme yapılıyor pull request");
 
         // YENİ EKLENEN KISIM: konsol demosu bittikten sonra web sunucusunu baslat  
         SpringApplication.run(App.class, args);
