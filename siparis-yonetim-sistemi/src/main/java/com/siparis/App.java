@@ -54,7 +54,7 @@ public class App {
 
         // "Baska bir gelistirme" - feature branch'te yapildi
         System.out.println("Kargo ucreti dahil toplam: " + (toplam + 25));
-        System.out.println("satır silindi")
+        System.out.println("satır silindi");
         System.out.println("KDV dahil toplam: (conflict denemesi) " + kdvDahilToplam);
 
         // "Baska bir gelistirme" - feature branch'te yapildi
