@@ -50,12 +50,26 @@ public class App {
  
         // "Takim arkadasi" degisikligi - dev'de dogrudan yapildi (sadece bu ornek icin)
         double kdvDahilToplam = toplam * 1.20;
+<<<<<<< HEAD
         System.out.println("KDV dahil toplam:" + kdvDahilToplam);
 
         // "Baska bir gelistirme" - feature branch'te yapildi
         System.out.println("Kargo ucreti dahil toplam: " + (toplam + 25));
+<<<<<<< HEAD
+=======
 
         System.out.println("deneme yapılıyor pull request");
+>>>>>>> feature/pr-denemesi
+=======
+        System.out.println("KDV dahil toplam: (conflict denemesi) " + kdvDahilToplam);
+
+        // "Baska bir gelistirme" - feature branch'te yapildi
+        System.out.println("Kargo ucreti dahil toplam: " + (toplam + 25));
+    
+           
+        // "Baska bir gelistirme" - feature branch'te yapildi
+        System.out.println("Kargo ucreti dahil toplam: (conflict denemesi feature) " + (toplam + 25));
+>>>>>>> 59daf70238fd86c961aef6c72596f7434aab75da
 
         // YENİ EKLENEN KISIM: konsol demosu bittikten sonra web sunucusunu baslat  
         SpringApplication.run(App.class, args);
