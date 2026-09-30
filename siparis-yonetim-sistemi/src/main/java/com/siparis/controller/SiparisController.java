@@ -16,16 +16,16 @@ public class SiparisController {
 
     private final SiparisRepository siparisRepository;
 
-    public SiparisController(SiparisRepository siparisRepository) {
+    public SiparisController(SiparisRepository siparisRepository) { //Constructor Injenction//
         this.siparisRepository = siparisRepository;
     }
 
-    @GetMapping
+    @GetMapping   // GET /api/siprarişler //
     public List<Siparis> tumSiparisleriGetir() {
         return siparisRepository.tumunuGetir();
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/{id}")   // GET /api/siprarişler/{id} //
     public ResponseEntity<Siparis> siparisGetir(@PathVariable Long id) {
         Siparis siparis = siparisRepository.idIleGetir(id);
         if (siparis == null) {
@@ -34,7 +34,7 @@ public class SiparisController {
         return ResponseEntity.ok(siparis);
     }
 
-    @PostMapping
+    @PostMapping        // POST /api/siparisler //  
     public ResponseEntity<Siparis> siparisOlustur(@RequestBody SiparisOlusturmaIstegi istek) {
         Musteri musteri = new Musteri(istek.musteriAd(), istek.musteriEmail());
         Siparis siparis = new Siparis(musteri);
@@ -45,7 +45,7 @@ public class SiparisController {
         return ResponseEntity.status(HttpStatus.CREATED).body(kaydedilen);
     }
 
-    @PutMapping("/{id}")
+    @PutMapping("/{id}")      // PUT /api/siparisler/{id} //
     public ResponseEntity<Siparis> siparisGuncelle(@PathVariable Long id, @RequestBody SiparisOlusturmaIstegi istek) {
         Siparis mevcut = siparisRepository.idIleGetir(id);
         if (mevcut == null) {
@@ -61,7 +61,7 @@ public class SiparisController {
         return ResponseEntity.ok(guncellenmis);
     }
 
-    @PatchMapping("/{id}/urunler")
+    @PatchMapping("/{id}/urunler")   // PATCH /api/siparisler/{id}/urunler //
     public ResponseEntity<Siparis> sipariseUrunEkle(@PathVariable Long id, @RequestBody UrunIstegi istek) {
         Siparis siparis = siparisRepository.idIleGetir(id);
         if (siparis == null) {
@@ -71,7 +71,7 @@ public class SiparisController {
         return ResponseEntity.ok(siparis);
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/{id}")  // DELETE /api/siparisler/{id} //
     public ResponseEntity<Void> siparisSil(@PathVariable Long id) {
         Siparis siparis = siparisRepository.idIleGetir(id);
         if (siparis == null) {
