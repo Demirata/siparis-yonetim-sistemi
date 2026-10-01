@@ -66,7 +66,7 @@ public class App {
 
         System.out.println("Pull Request denemesi");
 
-        System.out.println("feature/indirim-hesaplama conflict deniyoruz");
+        System.out.println("feadenem deneme deneemee");
 
         // YENİ EKLENEN KISIM: konsol demosu bittikten sonra web sunucusunu baslat  
         SpringApplication.run(App.class, args);
