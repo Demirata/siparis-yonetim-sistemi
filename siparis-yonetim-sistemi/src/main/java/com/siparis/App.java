@@ -66,7 +66,7 @@ public class App {
 
         System.out.println("Pull Request denemesi yaolu");
         
-        System.out.println("conflict deniyoruz-dfskfdskflsdfk-");
+        System.out.println("usıoısdufıosdıfosdjıofjo");
 
         System.out.println("feature/indirim-hesaplama conflict deniyoruz");
 
