@@ -64,6 +64,8 @@ public class App {
         // "Baska bir gelistirme" - feature branch'te yapildi
         System.out.println("Kargo ucreti dahil toplam: (conflict denemesi feature) " + (toplam + 25));
 
+        System.out.println("Pull Request denemesi");
+
 
         // YENİ EKLENEN KISIM: konsol demosu bittikten sonra web sunucusunu baslat  
         SpringApplication.run(App.class, args);
