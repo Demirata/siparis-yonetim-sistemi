@@ -68,6 +68,7 @@ public class App {
         
         System.out.println("conflict deniyoruz-dfskfdskflsdfk-");
 
+        System.out.println("feature/indirim-hesaplama conflict deniyoruz");
 
         // YENİ EKLENEN KISIM: konsol demosu bittikten sonra web sunucusunu baslat  
         SpringApplication.run(App.class, args);
