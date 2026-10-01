@@ -68,7 +68,7 @@ public class App {
         
         System.out.println("usıoısdufıosdıfosdjıofjo");
 
-        System.out.println("feature/indirim-hesaplama conflict deniyoruz");
+        System.out.println("feadenem deneme deneemee");
 
         // YENİ EKLENEN KISIM: konsol demosu bittikten sonra web sunucusunu baslat  
         SpringApplication.run(App.class, args);
